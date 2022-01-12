@@ -22,4 +22,6 @@ urlpatterns = [
     path('', TemplateView.as_view(template_name='adminlte/index.html')),
     path('login/', TemplateView.as_view(template_name='adminlte/login.html')),
     path('admin/', admin.site.urls),
+
+    path('acctcust/', include('acctcust.urls')),
 ]

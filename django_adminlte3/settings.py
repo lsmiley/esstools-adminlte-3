@@ -39,6 +39,28 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'django_tables2',
+    'rest_framework',
+    'django_ajax',
+    'crispy_forms',
+    'ckeditor',
+    'ckeditor_uploader',
+
+    # Apps
+    'category',
+    'product',
+    'order',
+    'orderitem',
+    'acctcust.apps.AcctcustConfig',
+    'prodvendor.apps.ProdvendorConfig',
+    'configmaster.apps.ConfigmasterConfig',
+    'configtable.apps.ConfigtableConfig',
+    'labordeliverytype.apps.LabordeliverytypeConfig',
+    'labordelivery.apps.LabordeliveryConfig',
+    'statusstate',
+    'tntworksheet',
+
 ]
 
 MIDDLEWARE = [
@@ -50,6 +72,15 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+
+REST_FRAMEWORK = {
+    # Use Django's standard `django.contrib.auth` permissions,
+    # or allow read-only access for unauthenticated users.
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
+    ]
+}
 
 ROOT_URLCONF = 'django_adminlte3.urls'
 
@@ -83,29 +114,29 @@ WSGI_APPLICATION = 'django_adminlte3.wsgi.application'
 # }
 
 # **** Local Database Settings ****
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.mysql',
-#         'NAME': 'esstools-adminlte-3-db',
-#         'USER': 'sizingadmin',
-#         'PASSWORD': 'Malware12345',
-#         'HOST': '127.0.0.1',
-#         'PORT': '1288',
-#     }
-# }
-
-# **** Cloud Database Settings ****
-#
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'esstools-adminlte-3-db',
         'USER': 'sizingadmin',
         'PASSWORD': 'Malware12345',
-        'HOST': '10.130.4.166',
-        'PORT': '3306',
+        'HOST': '127.0.0.1',
+        'PORT': '1146',
     }
 }
+
+# **** Cloud Database Settings ****
+#
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'esstools-adminlte-3-db',
+#         'USER': 'sizingadmin',
+#         'PASSWORD': 'Malware12345',
+#         'HOST': '10.130.4.166',
+#         'PORT': '3306',
+#     }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/dev/ref/settings/#auth-password-validators
@@ -147,3 +178,23 @@ USE_TZ = True
 # ]
 STATIC_ROOT = os.path.join(BASE_DIR, "static")
 STATIC_URL = '/static/'
+MEDIA_URL = '/media/'
+MEDIA_ROOT = 'media/'
+
+CURRENCY = 'Hrs'
+
+
+####################################
+    ##  CKEDITOR CONFIGURATION ##
+####################################
+
+CKEDITOR_JQUERY_URL = 'https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js'
+
+CKEDITOR_UPLOAD_PATH = 'uploads/'
+CKEDITOR_IMAGE_BACKEND = "pillow"
+
+CKEDITOR_CONFIGS = {
+    'default': {
+        'toolbar': 'Basic',
+    },
+}
