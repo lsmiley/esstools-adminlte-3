@@ -130,7 +130,7 @@ DATABASES = {
         'NAME': 'esstools-adminlte-3-db',
         'USER': 'sizingadmin',
         'PASSWORD': 'Malware12345',
-        'HOST': '10.130.4.166',
+        'HOST': '10.131.4.48',
         'PORT': '3306',
     }
 }
