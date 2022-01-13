@@ -25,3 +25,4 @@ django-ckeditor==6.2.0
 djangoajax==3.2
 django_ajax==0.3.0
 django-ajax-tables==1.1.1
+django-adminlte3==0.1.6
