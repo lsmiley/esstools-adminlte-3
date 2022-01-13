@@ -115,29 +115,29 @@ WSGI_APPLICATION = 'django_adminlte3.wsgi.application'
 # }
 
 # **** Local Database Settings ****
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'esstools-adminlte-3-db',
-        'USER': 'sizingadmin',
-        'PASSWORD': 'Malware12345',
-        'HOST': '127.0.0.1',
-        'PORT': '1146',
-    }
-}
-
-# **** Cloud Database Settings ****
-#
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.mysql',
 #         'NAME': 'esstools-adminlte-3-db',
 #         'USER': 'sizingadmin',
 #         'PASSWORD': 'Malware12345',
-#         'HOST': '10.130.4.166',
-#         'PORT': '3306',
+#         'HOST': '127.0.0.1',
+#         'PORT': '1146',
 #     }
 # }
+
+# **** Cloud Database Settings ****
+#
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'esstools-adminlte-3-db',
+        'USER': 'sizingadmin',
+        'PASSWORD': 'Malware12345',
+        'HOST': '10.130.4.166',
+        'PORT': '3306',
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/dev/ref/settings/#auth-password-validators
