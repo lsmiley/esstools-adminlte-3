@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'ckeditor',
     'ckeditor_uploader',
+    'django-adminlte3',
     'category',
     'product',
     'order',
