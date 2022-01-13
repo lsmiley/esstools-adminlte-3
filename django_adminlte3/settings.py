@@ -39,15 +39,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
     'django_tables2',
     'rest_framework',
     'django_ajax',
     'crispy_forms',
     'ckeditor',
     'ckeditor_uploader',
-
-    # Apps
     'category',
     'product',
     'order',
