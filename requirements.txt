@@ -1,7 +1,7 @@
 tzdata==2021.5
 setuptools==60.5.0
 django==4.0.1
-django-adminlte3
+django-adminlte3==0.1.6
 asgiref==3.4.1
 sqlparse==0.4.2
 mysqlclient==2.1.0
