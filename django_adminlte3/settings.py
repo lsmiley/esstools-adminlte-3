@@ -45,7 +45,6 @@ INSTALLED_APPS = [
     'crispy_forms',
     'ckeditor',
     'ckeditor_uploader',
-    'django-adminlte3',
     'category',
     'product',
     'order',
@@ -119,7 +118,7 @@ WSGI_APPLICATION = 'django_adminlte3.wsgi.application'
 #         'USER': 'sizingadmin',
 #         'PASSWORD': 'Malware12345',
 #         'HOST': '127.0.0.1',
-#         'PORT': '1146',
+#         'PORT': '6326',
 #     }
 # }
 
